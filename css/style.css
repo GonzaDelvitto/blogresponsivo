@@ -230,6 +230,12 @@ a {
   border-radius: 1.2rem;
   overflow: hidden;
   border: 1px solid #1f2937;
+
+  display: flex;
+  flex-direction: column;
+
+  /* Para que las cards tengan altura similar, pero crezcan si el contenido es mayor */
+  min-height: 350px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -239,13 +245,19 @@ a {
 }
 
 .post-card img {
-  height: 190px;
   width: 100%;
-  object-fit: cover;
+  height: 190px;         /* alto fijo para que todas tengan la misma altura */
+  object-fit: cover;     /* cubre todo el contenedor sin distorsión */
+  background-color: #121a2a;
 }
+
 
 .post-card .content {
   padding: 1.1rem;
+  flex-grow: 1; /* que ocupe el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* que el texto y el link estén separados */
 }
 
 .post-card .tag {
@@ -264,6 +276,9 @@ a {
 .post-card p {
   font-size: 0.95rem;
   color: #9ca3af;
+  flex-grow: 1;       /* permite que el párrafo crezca para llenar espacio */
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
 }
 
 .post-card a {
@@ -272,6 +287,14 @@ a {
   font-weight: 600;
   color: #60a5fa;
 }
+
+/* ================= POSTS GRID ================= */
+.posts-grid {
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
 
 /* ================= SKELETON ================= */
 .skeleton {
