@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Blog Tech & Diseño</title>
+  <meta
+    name="description"
+    content="Blog minimalista sobre tecnología y diseño, mobile first y sin humo."
+  />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div id="progress"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header__row">
+    <h1 class="logo">Tech/Diseño</h1>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Inicio</a>
+      <a href="#posts">Artículos</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h2>Tecnología y diseño, sin humo</h2>
+    <p>Contenido claro, mobile first y enfocado en leer cómodo.</p>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main class="container">
+
+  <!-- SEARCH -->
+  <section class="search">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Buscar artículos..."
+      aria-label="Buscar artículos"
+    />
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="categories__list" id="categories"></div>
+  </section>
+
+  <!-- POSTS GRID -->
+  <section id="posts" class="posts-grid">
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+    <div class="skeleton"></div>
+  </section>
+
+  <!-- PAGINATION -->
+  <div class="pagination" id="pagination"></div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Página ficticia · Blog Tech & Diseño</p>
+</footer>
+
+<!-- JS -->
+<script src="./js/menu.js"></script>
+<script src="./js/progess.js"></script>
+<script src="./js/blog.js"></script>
+<script src="./js/animate.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Cómo escribir CSS mantenible",
+    "excerpt": "Buenas prácticas reales para proyectos escalables.",
+    "category": "Diseño",
+    "date": "12 Dic 2025",
+    "image": "img/cssm.png",
+    "content": [
+      "Escribir CSS es fácil, pero mantenerlo en el tiempo es otro tema.",
+      "Cuando un proyecto crece, un CSS desordenado genera errores, duplicación y frustración.",
+      "Usar una convención clara de nombres ayuda a entender rápidamente el código.",
+      "Pensar mobile first simplifica el diseño y mejora la escalabilidad.",
+      "Un CSS mantenible es aquel que se puede modificar sin miedo."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mobile first no es opcional",
+    "excerpt": "Diseñar desde el celular mejora todo.",
+    "category": "UX",
+    "date": "10 Dic 2025",
+    "image": "img/mobilefirst.png",
+    "content": [
+      "Hoy la mayoría de los usuarios navega desde el celular.",
+      "Diseñar primero para mobile obliga a priorizar lo importante.",
+      "Un diseño simple en mobile suele funcionar mejor en desktop.",
+      "Las media queries sirven para escalar, no para parchear.",
+      "Mobile first no es una moda, es una necesidad."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Performance web básica",
+    "excerpt": "Cómo mejorar velocidad sin frameworks pesados.",
+    "category": "Tech",
+    "date": "8 Dic 2025",
+    "image": "img/perfomance.png",
+    "content": [
+      "La performance web impacta directamente en la experiencia del usuario.",
+      "Menos JS y menos dependencias suelen dar mejores resultados.",
+      "Optimizar imágenes es uno de los pasos más simples y efectivos.",
+      "Un sitio rápido se siente más profesional.",
+      "No siempre necesitás frameworks para hacer un buen sitio."
+    ]
+  }
+]
